@@ -1,0 +1,19 @@
+<?php
+
+//creating directory to store files
+//designing user interface
+
+?>
+
+<form method="POST" enctype="multipart/form-data" action="upload.php">
+	<input type="file" name="file">
+	<input type="submit" value="Upload">
+</form>
+
+<?php
+
+// creating file to upload
+//displaying all uploaded files
+
+$files = scandir("uploads"); 
+print_r($files);
